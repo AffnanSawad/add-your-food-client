@@ -15,9 +15,9 @@ const AddFood = () => {
         const quantity = e.target.quantity.value;
         const price = e.target.price.value ;
         const photo = e.target.url.value;
-        const description = e.target.description.value;
+       
     
-        const newFood = {name,quantity,price,photo,description};
+        const newFood = {name,quantity,price,photo};
     
         console.log(newFood);
     
@@ -70,13 +70,7 @@ const AddFood = () => {
           <input type="text" name="quantity" placeholder="Quantity" className="input input-bordered" required />
           
         </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-bold">Description</span>
-          </label>
-          <input type="text" name="description" placeholder="description" className="input input-bordered" required />
-          
-        </div>
+       
         <div className="form-control">
           <label className="label">
             <span className="label-text font-bold">Price</span>

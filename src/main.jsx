@@ -13,6 +13,7 @@ import Root from './components/root/root.jsx';
 import ErrorPage from './components/root/ErrorPage/ErrorPage.jsx';
 import Home from './components/root/Home/Home.jsx';
 import AddFood from './components/root/AddFood/AddFood.jsx';
+import MyFood from './components/root/MyFood/MyFood.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
   {
     path:'/addfood',
     element: <AddFood></AddFood>
+  },
+  {
+    path:'/myfood',
+    element: <MyFood></MyFood>,
+
+    loader: ()=>fetch('http://localhost:5000/food')
   },
 
 

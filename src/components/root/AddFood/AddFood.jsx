@@ -54,7 +54,7 @@ const AddFood = () => {
    
     return (
         <div>
-            <h1 className="text-2xl text-amber-800 font-extrabold mt-20 ml-10">Add Food</h1>
+            <h1 className="text-4xl text-amber-800 font-extrabold mt-20 ml-10">Add Food</h1>
         
             <form onSubmit={handleAddFood} className="card-body w-1/2 lg:ml-80">
         <div className="form-control ">

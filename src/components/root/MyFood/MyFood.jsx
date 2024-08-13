@@ -1,10 +1,13 @@
 import { useLoaderData } from "react-router-dom";
 import FoodCart from "./FoodCart";
+import { useState } from "react";
 
 
 const MyFood = () => {
 
   const loadedMyFoods = useLoaderData();
+
+  const [remainingFoods , setRemainingFoods] = useState(loadedMyFoods);
 
 
 
@@ -24,6 +27,11 @@ const MyFood = () => {
             key={myFood.id}
 
             myFood={myFood}
+
+
+            remainingFoods={remainingFoods}
+
+            setRemainingFoods={setRemainingFoods}
             
             ></FoodCart>  )
         }
